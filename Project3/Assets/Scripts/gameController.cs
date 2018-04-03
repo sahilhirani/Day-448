@@ -2,6 +2,28 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public class GameController : MonoBehaviour {
+	public GameObject Hazard;
+	public Vector3 spawnValues;
+
+	void Start(){
+		SpawnWaves();
+	}
+	void SpawnWaves(){
+		Vector3 spawnPosition = new Vector3 (Random.Range(-spawnValues.x, spawnValues.x), 0, spawnValues.z);
+		Quaternion spawnRotation = Quaternion.identity;
+		Instantiate (Hazard, spawnPosition, spawnRotation);
+
+
+
+	}
+}
+
+
+/*using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
 public class gameController : MonoBehaviour {
 	public GameObject asteroid;
 	public Vector3 spawnValues;
@@ -29,3 +51,5 @@ public class gameController : MonoBehaviour {
 		}
 	}
 }
+*/
+
