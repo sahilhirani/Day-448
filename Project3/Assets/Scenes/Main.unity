@@ -391,7 +391,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 6
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -569,15 +569,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d689e35070374bdf96464e4ce0d4380, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
-  tilt: 5
-  boundary:
-    xMin: -4.2
-    xMax: 4.2
+  map:
+    xMin: -5.2
+    xMax: 5.2
     zMin: 0
     zMax: 0
   Laser: {fileID: 1681415053133222, guid: 092b4322193a32e469e89eebbfb0794e, type: 2}
   startLaser: {fileID: 1419393556}
+  speed: 10
+  tilt: 5
   fireRate: 0.5
 --- !u!1 &1363798352
 GameObject:
