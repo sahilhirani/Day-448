@@ -1,0 +1,12 @@
+Unity Tutorial:
+ - https://unity3d.com/learn/tutorials/s/space-shooter-tutorial
+
+Blender Tutorials:
+ - (Spaceship) https://www.youtube.com/watch?v=y8-R1H9e1j0
+ - (Asteroid) https://www.youtube.com/watch?v=o7SdmYKirLI&t
+
+Scrolling Background:
+ - https://unity3d.com/learn/tutorials/topics/2d-game-creation/2d-scrolling-backgrounds
+
+Unity Main Menu:
+ - https://unity3d.com/learn/tutorials/topics/user-interface-ui/creating-main-menu
