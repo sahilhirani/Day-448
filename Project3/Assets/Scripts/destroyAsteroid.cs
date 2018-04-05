@@ -11,6 +11,12 @@ public class destroyAsteroid : MonoBehaviour {
 			return;
 		}
 
+		/*if(other.tag == "Asteroid") {
+			GameObject asteroid = GameObject.FindGameObjectWithTag ("Asteroid");
+			asteroid.transform.position = new Vector3 (asteroid.transform.position.x, 0.0f, asteroid.transform.position.z);
+			return;
+		}*/
+
 		Instantiate (explosion, transform.position, transform.rotation);
 
 		if(other.tag == "Player") {

@@ -20,11 +20,14 @@ public class gameController : MonoBehaviour {
 		Debug.Log (Time.time);
 
 		while(true) {
+			//asteroidCount = (asteroidCount * Mathf.CeilToInt(Time.realtimeSinceStartup));
+
 			for (int i = 0; i < asteroidCount; i++) {
-				Vector3 spawnPosition = new Vector3 (Random.Range (-spawnValues.x, spawnValues.x), spawnValues.y, spawnValues.z);
+				Vector3 spawnPosition = new Vector3 (Random.Range (-spawnValues.x, spawnValues.x), 0.0f, spawnValues.z);
 				Quaternion spawnRotation = Quaternion.identity;
 				Instantiate (asteroid, spawnPosition, spawnRotation);
-				yield return new WaitForSeconds (waveWait * (1 / (i+1)));
+				yield return new WaitForSeconds (waveWait);
+
 			}
 		}
 	}

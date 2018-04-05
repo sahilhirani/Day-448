@@ -54,6 +54,7 @@
      <Compile Include="Assets\Scripts\asteroidMover.cs" />
      <Compile Include="Assets\Scripts\asteroidRotator.cs" />
      <Compile Include="Assets\Scripts\destroyAsteroid.cs" />
+     <Compile Include="Assets\Scripts\destroybyTime.cs" />
      <Compile Include="Assets\Scripts\gameController.cs" />
      <Compile Include="Assets\Scripts\laserMovement.cs" />
      <Compile Include="Assets\Scripts\outOfBounds.cs" />

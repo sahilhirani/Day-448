@@ -463,7 +463,7 @@ MonoBehaviour:
     zMax: 14.5
   Laser: {fileID: 1681415053133222, guid: 092b4322193a32e469e89eebbfb0794e, type: 2}
   startLaser: {fileID: 1419393556}
-  speed: 12
+  speed: 8
   tilt: 4
   fireRate: 0.1
 --- !u!64 &746692780
@@ -559,7 +559,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1131334610}
   m_LocalRotation: {x: -0.5, y: 0.5, z: -0.5, w: -0.5}
-  m_LocalPosition: {x: 0, y: 10, z: 5.6}
+  m_LocalPosition: {x: 0, y: 10, z: 7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -721,12 +721,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c1015797d7184fc49a0dd41847d69a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  asteroid: {fileID: 1738090991332278, guid: e8bce1a5eff4442d28e2e9add2231f3c, type: 2}
-  spawnValues: {x: 5.6, y: 0, z: 15}
-  asteroidCount: 1
+  asteroid: {fileID: 1433994450706818, guid: e8bce1a5eff4442d28e2e9add2231f3c, type: 2}
+  spawnValues: {x: 5, y: 0, z: 17}
+  asteroidCount: 10
   spawnWait: 0.5
   startWait: 1
-  waveWait: 1
+  waveWait: 0.3
 --- !u!4 &1943211464
 Transform:
   m_ObjectHideFlags: 0
