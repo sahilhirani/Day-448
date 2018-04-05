@@ -7,7 +7,7 @@ public class destroyAsteroid : MonoBehaviour {
 	public GameObject playerExplosion;
 
 	void OnTriggerEnter(Collider other) {
-		if(other.tag == "Boundary") {
+		if(other.tag == "Bounds") {
 			return;
 		}
 

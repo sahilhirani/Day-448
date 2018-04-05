@@ -257,7 +257,7 @@ GameObject:
   - component: {fileID: 659213102}
   m_Layer: 0
   m_Name: Bounds
-  m_TagString: Untagged
+  m_TagString: Bounds
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -721,12 +721,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c1015797d7184fc49a0dd41847d69a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  asteroid: {fileID: 100000, guid: baedbbad82997f445a8cb4da210404e0, type: 3}
-  spawnValues: {x: 0, y: 0, z: 15}
+  asteroid: {fileID: 1738090991332278, guid: e8bce1a5eff4442d28e2e9add2231f3c, type: 2}
+  spawnValues: {x: 5.6, y: 0, z: 15}
   asteroidCount: 1
-  spawnWait: 0
-  startWait: 0
-  waveWait: 0
+  spawnWait: 0.5
+  startWait: 1
+  waveWait: 1
 --- !u!4 &1943211464
 Transform:
   m_ObjectHideFlags: 0
