@@ -721,7 +721,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c1015797d7184fc49a0dd41847d69a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  asteroid: {fileID: 1433994450706818, guid: e8bce1a5eff4442d28e2e9add2231f3c, type: 2}
+  asteroid: {fileID: 1315322767002764, guid: ce1bf665df9d74322883cf68684faa1a, type: 2}
   spawnValues: {x: 5, y: 0, z: 17}
   asteroidCount: 10
   spawnWait: 0.5

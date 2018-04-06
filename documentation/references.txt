@@ -13,3 +13,6 @@ Scrolling Background:
 
 Unity Main Menu:
  - https://unity3d.com/learn/tutorials/topics/user-interface-ui/creating-main-menu
+
+Blender Low Poly Rocks:
+ - https://blenderartists.org/forum/showthread.php?314175-Addon-LowPoly-Rock
