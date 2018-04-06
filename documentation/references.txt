@@ -13,14 +13,3 @@ Scrolling Background:
 
 Unity Main Menu:
  - https://unity3d.com/learn/tutorials/topics/user-interface-ui/creating-main-menu
-
-(playerMovement.cs START)
-/* @brief Instantiates any defined objects. More info from Unity at: https://docs.unity3d.com/ScriptReference/MonoBehaviour.Start.html
-	** @pre A valid ship model exists.
-	** @post The ship model gets assigned a rigid body that is used for physics.
-	** @return None*/
-(playerMovement.cs UPDATE)
-/* @brief Updates after every game frame to allow user to fire their weapon. More info from Unity at: https://docs.unity3d.com/ScriptReference/MonoBehaviour.Update.html
-	** @pre None.
-	** @post The game is updated every frame.
-	** @return None*/

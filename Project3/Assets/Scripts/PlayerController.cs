@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-//allows the variables to be serialized and collapsible
-[System.Serializable]
+[System.Serializable] //allows for variables declared below to be visible in the unity editor
 public class MapBounds
 {
+	//variable declaration for the bounds of the camera to keep the ship and asteroids within frame
     public float xMin, xMax, zMin, zMax;
 }
 
@@ -21,11 +21,19 @@ public class PlayerController : MonoBehaviour {
     public float fireRate;
     private float nextShot;
 
+    /* @brief Instantiates any defined objects. More info from Unity at: https://docs.unity3d.com/ScriptReference/MonoBehaviour.Start.html
+	** @pre A valid ship model exists.
+	** @post The ship model gets assigned a rigid body that is used for physics.
+	** @return None*/
     void Start(){
         //assigns rigidbody component to ship variable
         shipComp = GetComponent<Rigidbody>();
     }
 
+    /* @brief Updates after every game frame to allow user to fire their weapon. More info from Unity at: https://docs.unity3d.com/ScriptReference/MonoBehaviour.Update.html
+	** @pre None
+	** @post The game is updated every frame.
+	** @return None*/
     void Update() {
         //checks if either the keyboard or right mouse button is clicked, and if enough time has passed for another shot
         if ((Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space)) && Time.time > nextShot)
@@ -37,6 +45,10 @@ public class PlayerController : MonoBehaviour {
         }
     }
 
+    /* @brief Updates after every fixed framerate. Specifically used in conjunction with Rigidbody objects.. More info from Unity at: https://docs.unity3d.com/ScriptReference/MonoBehaviour.FixedUpdate.html
+	** @pre None
+	** @post Allows for the ship to be moved by the user. Tilt is given to prevent a static moving object.
+	** @return None*/
     void FixedUpdate(){
         //declaration of movement variable
         float moveVertical = Input.GetAxis("Vertical");
