@@ -1041,7 +1041,7 @@ MonoBehaviour:
   asteroidCount: 10
   spawnWait: 0.5
   startWait: 1
-  waveWait: 0.3
+  waveWait: 0.2
   scoreText: {fileID: 1990587323}
   gameOverText: {fileID: 1276836232}
   restartText: {fileID: 2034875913}

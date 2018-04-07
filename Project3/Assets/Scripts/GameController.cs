@@ -10,7 +10,7 @@ public class GameController : MonoBehaviour {
 	public float spawnWait;
 	public float startWait;
 	public float waveWait;
-	private float difficulty = 0.002f;
+	private float difficulty = 0.0017f;
 	public Text scoreText;
 	public Text gameOverText;
 	public Text restartText;
@@ -45,7 +45,8 @@ public class GameController : MonoBehaviour {
 
 		while(true) {
 			//asteroidCount = (asteroidCount * Mathf.CeilToInt(Time.realtimeSinceStartup));
-
+			score += Mathf.CeilToInt(Time.realtimeSinceStartup);
+			updateScore ();
 			for (int i = 0; i < asteroidCount; i++) {
 				Vector3 spawnPosition = new Vector3 (Random.Range (-spawnValues.x, spawnValues.x), 0.0f, spawnValues.z);
 				Quaternion spawnRotation = Quaternion.identity;
@@ -54,7 +55,7 @@ public class GameController : MonoBehaviour {
 				updateScore ();
 				yield return new WaitForSeconds (spawnWait);
 			}
-			difficulty = difficulty + 0.0001f;
+			difficulty = difficulty + 0.0005f;
 			waveWait = waveWait - difficulty;
 			asteroidCount = asteroidCount + 1;
 			if (asteroidCount > 20) {
@@ -63,8 +64,6 @@ public class GameController : MonoBehaviour {
 			if (waveWait <= 0.12f) {
 				waveWait = 0.2f;
 			}
-			score += Mathf.CeilToInt(Time.realtimeSinceStartup);
-			updateScore ();
 			yield return new WaitForSeconds (waveWait);
 			if (gameOver) {
 				restartText.text = "To Restart press 'R'";
