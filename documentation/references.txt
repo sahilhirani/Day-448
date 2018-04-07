@@ -22,3 +22,9 @@ Background Music:
 
 Unity Score Counter:
  - https://unity3d.com/learn/tutorials/projects/roll-ball-tutorial/displaying-score-and-text
+
+Laser Sound Effect (Sampled from):
+ - http://soundbible.com/1774-Laser-Machine-Gun.html
+
+Asteroid Explosion (Sampled from):
+ - https://www.youtube.com/watch?v=57nmarMiJrk
