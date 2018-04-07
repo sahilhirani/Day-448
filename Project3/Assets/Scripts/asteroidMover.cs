@@ -5,11 +5,11 @@ using UnityEngine;
 public class asteroidMover : MonoBehaviour {
 	//could probably be random for each asteroid?
 	//public float asteroidSpeed;
-	private float elapsedTime;
+	private float speed;
 
 	void Start() {
-		elapsedTime = -5.0f;
+		speed = -5.0f;
 		//multiply by time
-		GetComponent<Rigidbody> ().velocity = transform.forward * elapsedTime;//* -Random.Range (1, 2) * elapsedTime;
+		GetComponent<Rigidbody> ().velocity = transform.forward * speed * Random.Range (1, 2);
 	}
 }
