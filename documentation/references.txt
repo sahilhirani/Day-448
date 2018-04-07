@@ -16,3 +16,9 @@ Unity Main Menu:
 
 Blender Low Poly Rocks:
  - https://blenderartists.org/forum/showthread.php?314175-Addon-LowPoly-Rock
+
+Background Music:
+ - https://www.dl-sounds.com/ (Galaxy Runner)
+
+Unity Score Counter:
+ - https://unity3d.com/learn/tutorials/projects/roll-ball-tutorial/displaying-score-and-text

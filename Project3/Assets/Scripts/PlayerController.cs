@@ -42,6 +42,8 @@ public class PlayerController : MonoBehaviour {
             nextShot = Time.time + fireRate;
             //instantiates the laser object using the spawn location's position and rotation
             Instantiate(Laser, startLaser.position, startLaser.rotation);
+			//play laser sound
+			GetComponent<AudioSource>().Play();
         }
     }
 
