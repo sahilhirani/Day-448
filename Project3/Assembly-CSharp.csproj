@@ -59,7 +59,6 @@
      <Compile Include="Assets\Scripts\laserMovement.cs" />
      <Compile Include="Assets\Scripts\outOfBounds.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
-     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
  <Reference Include="Facebook.Unity.Settings">
  <HintPath>/Users/sahilhirani/Desktop/EECS_448/Project3/Project3/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
