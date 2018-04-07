@@ -5,7 +5,7 @@ using UnityEngine;
 public class destroyAsteroid : MonoBehaviour {
 	public GameObject explosion;
 	public GameObject playerExplosion;
-	private int scoreValue = 10;
+	private int scoreValue = 100;
 	private GameController gameController;
 
 	void Start(){
