@@ -1,0 +1,183 @@
+\hypertarget{class_game_controller}{}\section{Game\+Controller Class Reference}
+\label{class_game_controller}\index{Game\+Controller@{Game\+Controller}}
+Inheritance diagram for Game\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_game_controller}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_game_controller_a9cd49518487a342b5f635537d10b3589}{add\+Score}} (int new\+Score\+Value)
+\item 
+void \mbox{\hyperlink{class_game_controller_a867b359e465ba013eec7f1ee03b75118}{Game\+Over}} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Game\+Object \mbox{\hyperlink{class_game_controller_ab280da3f329b7e2532dda6062a58f4fb}{asteroid}}
+\item 
+Vector3 \mbox{\hyperlink{class_game_controller_a5e4f56c23896d4b528da579f93335896}{spawn\+Values}}
+\item 
+int \mbox{\hyperlink{class_game_controller_aca9ea9aa49e5af784896d6b895f6be90}{asteroid\+Count}}
+\item 
+float \mbox{\hyperlink{class_game_controller_a27c91a14de3982813ad3d8245d0134d7}{spawn\+Wait}}
+\item 
+float \mbox{\hyperlink{class_game_controller_a9b6f96c29d3ee0f2c692c30ed2b12835}{start\+Wait}}
+\item 
+float \mbox{\hyperlink{class_game_controller_ad210270b367c1c439d35e8177d989019}{wave\+Wait}}
+\item 
+Text \mbox{\hyperlink{class_game_controller_ad59d43bc8b212847eaae1e877d8c1a31}{score\+Text}}
+\item 
+Text \mbox{\hyperlink{class_game_controller_aba4351ee1c41d1af6c44c2cb106a4b67}{game\+Over\+Text}}
+\item 
+Text \mbox{\hyperlink{class_game_controller_a68dea27fd0de9061889d2664697af64f}{restart\+Text}}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_game_controller_a97788a7aa0f09c8d748781683e5f045b}{Start}} ()
+\item 
+void \mbox{\hyperlink{class_game_controller_a5a89277529cadb49af7d55eba3bbf056}{Update}} ()
+\item 
+I\+Enumerator \mbox{\hyperlink{class_game_controller_afcbbff33b0d0fb1fed262dd67d52e9c3}{spawn\+Waves}} ()
+\item 
+void \mbox{\hyperlink{class_game_controller_a54d9efcafca6d05c967e375066ca1a27}{update\+Score}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_game_controller_aa8d3b5308427f0cbbbe8f34d3fd96d31}{difficulty}} = 0.\+0017f
+\item 
+int \mbox{\hyperlink{class_game_controller_a5262f16a935aa930f813ff9c0dc060f2}{score}}
+\item 
+bool \mbox{\hyperlink{class_game_controller_aeea923e78ddd573296687317e638a937}{restart}}
+\item 
+bool \mbox{\hyperlink{class_game_controller_aeae400ea0c604655ce5801818a5a44a1}{game\+Over}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_controller_a9cd49518487a342b5f635537d10b3589}\label{class_game_controller_a9cd49518487a342b5f635537d10b3589}} 
+\index{Game\+Controller@{Game\+Controller}!add\+Score@{add\+Score}}
+\index{add\+Score@{add\+Score}!Game\+Controller@{Game\+Controller}}
+\subsubsection{\texorpdfstring{add\+Score()}{addScore()}}
+{\footnotesize\ttfamily void Game\+Controller.\+add\+Score (\begin{DoxyParamCaption}\item[{int}]{new\+Score\+Value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_game_controller_a867b359e465ba013eec7f1ee03b75118}\label{class_game_controller_a867b359e465ba013eec7f1ee03b75118}} 
+\index{Game\+Controller@{Game\+Controller}!Game\+Over@{Game\+Over}}
+\index{Game\+Over@{Game\+Over}!Game\+Controller@{Game\+Controller}}
+\subsubsection{\texorpdfstring{Game\+Over()}{GameOver()}}
+{\footnotesize\ttfamily void Game\+Controller.\+Game\+Over (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_game_controller_afcbbff33b0d0fb1fed262dd67d52e9c3}\label{class_game_controller_afcbbff33b0d0fb1fed262dd67d52e9c3}} 
+\index{Game\+Controller@{Game\+Controller}!spawn\+Waves@{spawn\+Waves}}
+\index{spawn\+Waves@{spawn\+Waves}!Game\+Controller@{Game\+Controller}}
+\subsubsection{\texorpdfstring{spawn\+Waves()}{spawnWaves()}}
+{\footnotesize\ttfamily I\+Enumerator Game\+Controller.\+spawn\+Waves (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_game_controller_a97788a7aa0f09c8d748781683e5f045b}\label{class_game_controller_a97788a7aa0f09c8d748781683e5f045b}} 
+\index{Game\+Controller@{Game\+Controller}!Start@{Start}}
+\index{Start@{Start}!Game\+Controller@{Game\+Controller}}
+\subsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Game\+Controller.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_game_controller_a5a89277529cadb49af7d55eba3bbf056}\label{class_game_controller_a5a89277529cadb49af7d55eba3bbf056}} 
+\index{Game\+Controller@{Game\+Controller}!Update@{Update}}
+\index{Update@{Update}!Game\+Controller@{Game\+Controller}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Game\+Controller.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_game_controller_a54d9efcafca6d05c967e375066ca1a27}\label{class_game_controller_a54d9efcafca6d05c967e375066ca1a27}} 
+\index{Game\+Controller@{Game\+Controller}!update\+Score@{update\+Score}}
+\index{update\+Score@{update\+Score}!Game\+Controller@{Game\+Controller}}
+\subsubsection{\texorpdfstring{update\+Score()}{updateScore()}}
+{\footnotesize\ttfamily void Game\+Controller.\+update\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_game_controller_ab280da3f329b7e2532dda6062a58f4fb}\label{class_game_controller_ab280da3f329b7e2532dda6062a58f4fb}} 
+\index{Game\+Controller@{Game\+Controller}!asteroid@{asteroid}}
+\index{asteroid@{asteroid}!Game\+Controller@{Game\+Controller}}
+\subsubsection{\texorpdfstring{asteroid}{asteroid}}
+{\footnotesize\ttfamily Game\+Object Game\+Controller.\+asteroid}
+
+\mbox{\Hypertarget{class_game_controller_aca9ea9aa49e5af784896d6b895f6be90}\label{class_game_controller_aca9ea9aa49e5af784896d6b895f6be90}} 
+\index{Game\+Controller@{Game\+Controller}!asteroid\+Count@{asteroid\+Count}}
+\index{asteroid\+Count@{asteroid\+Count}!Game\+Controller@{Game\+Controller}}
+\subsubsection{\texorpdfstring{asteroid\+Count}{asteroidCount}}
+{\footnotesize\ttfamily int Game\+Controller.\+asteroid\+Count}
+
+\mbox{\Hypertarget{class_game_controller_aa8d3b5308427f0cbbbe8f34d3fd96d31}\label{class_game_controller_aa8d3b5308427f0cbbbe8f34d3fd96d31}} 
+\index{Game\+Controller@{Game\+Controller}!difficulty@{difficulty}}
+\index{difficulty@{difficulty}!Game\+Controller@{Game\+Controller}}
+\subsubsection{\texorpdfstring{difficulty}{difficulty}}
+{\footnotesize\ttfamily float Game\+Controller.\+difficulty = 0.\+0017f\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_game_controller_aeae400ea0c604655ce5801818a5a44a1}\label{class_game_controller_aeae400ea0c604655ce5801818a5a44a1}} 
+\index{Game\+Controller@{Game\+Controller}!game\+Over@{game\+Over}}
+\index{game\+Over@{game\+Over}!Game\+Controller@{Game\+Controller}}
+\subsubsection{\texorpdfstring{game\+Over}{gameOver}}
+{\footnotesize\ttfamily bool Game\+Controller.\+game\+Over\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_game_controller_aba4351ee1c41d1af6c44c2cb106a4b67}\label{class_game_controller_aba4351ee1c41d1af6c44c2cb106a4b67}} 
+\index{Game\+Controller@{Game\+Controller}!game\+Over\+Text@{game\+Over\+Text}}
+\index{game\+Over\+Text@{game\+Over\+Text}!Game\+Controller@{Game\+Controller}}
+\subsubsection{\texorpdfstring{game\+Over\+Text}{gameOverText}}
+{\footnotesize\ttfamily Text Game\+Controller.\+game\+Over\+Text}
+
+\mbox{\Hypertarget{class_game_controller_aeea923e78ddd573296687317e638a937}\label{class_game_controller_aeea923e78ddd573296687317e638a937}} 
+\index{Game\+Controller@{Game\+Controller}!restart@{restart}}
+\index{restart@{restart}!Game\+Controller@{Game\+Controller}}
+\subsubsection{\texorpdfstring{restart}{restart}}
+{\footnotesize\ttfamily bool Game\+Controller.\+restart\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_game_controller_a68dea27fd0de9061889d2664697af64f}\label{class_game_controller_a68dea27fd0de9061889d2664697af64f}} 
+\index{Game\+Controller@{Game\+Controller}!restart\+Text@{restart\+Text}}
+\index{restart\+Text@{restart\+Text}!Game\+Controller@{Game\+Controller}}
+\subsubsection{\texorpdfstring{restart\+Text}{restartText}}
+{\footnotesize\ttfamily Text Game\+Controller.\+restart\+Text}
+
+\mbox{\Hypertarget{class_game_controller_a5262f16a935aa930f813ff9c0dc060f2}\label{class_game_controller_a5262f16a935aa930f813ff9c0dc060f2}} 
+\index{Game\+Controller@{Game\+Controller}!score@{score}}
+\index{score@{score}!Game\+Controller@{Game\+Controller}}
+\subsubsection{\texorpdfstring{score}{score}}
+{\footnotesize\ttfamily int Game\+Controller.\+score\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_game_controller_ad59d43bc8b212847eaae1e877d8c1a31}\label{class_game_controller_ad59d43bc8b212847eaae1e877d8c1a31}} 
+\index{Game\+Controller@{Game\+Controller}!score\+Text@{score\+Text}}
+\index{score\+Text@{score\+Text}!Game\+Controller@{Game\+Controller}}
+\subsubsection{\texorpdfstring{score\+Text}{scoreText}}
+{\footnotesize\ttfamily Text Game\+Controller.\+score\+Text}
+
+\mbox{\Hypertarget{class_game_controller_a5e4f56c23896d4b528da579f93335896}\label{class_game_controller_a5e4f56c23896d4b528da579f93335896}} 
+\index{Game\+Controller@{Game\+Controller}!spawn\+Values@{spawn\+Values}}
+\index{spawn\+Values@{spawn\+Values}!Game\+Controller@{Game\+Controller}}
+\subsubsection{\texorpdfstring{spawn\+Values}{spawnValues}}
+{\footnotesize\ttfamily Vector3 Game\+Controller.\+spawn\+Values}
+
+\mbox{\Hypertarget{class_game_controller_a27c91a14de3982813ad3d8245d0134d7}\label{class_game_controller_a27c91a14de3982813ad3d8245d0134d7}} 
+\index{Game\+Controller@{Game\+Controller}!spawn\+Wait@{spawn\+Wait}}
+\index{spawn\+Wait@{spawn\+Wait}!Game\+Controller@{Game\+Controller}}
+\subsubsection{\texorpdfstring{spawn\+Wait}{spawnWait}}
+{\footnotesize\ttfamily float Game\+Controller.\+spawn\+Wait}
+
+\mbox{\Hypertarget{class_game_controller_a9b6f96c29d3ee0f2c692c30ed2b12835}\label{class_game_controller_a9b6f96c29d3ee0f2c692c30ed2b12835}} 
+\index{Game\+Controller@{Game\+Controller}!start\+Wait@{start\+Wait}}
+\index{start\+Wait@{start\+Wait}!Game\+Controller@{Game\+Controller}}
+\subsubsection{\texorpdfstring{start\+Wait}{startWait}}
+{\footnotesize\ttfamily float Game\+Controller.\+start\+Wait}
+
+\mbox{\Hypertarget{class_game_controller_ad210270b367c1c439d35e8177d989019}\label{class_game_controller_ad210270b367c1c439d35e8177d989019}} 
+\index{Game\+Controller@{Game\+Controller}!wave\+Wait@{wave\+Wait}}
+\index{wave\+Wait@{wave\+Wait}!Game\+Controller@{Game\+Controller}}
+\subsubsection{\texorpdfstring{wave\+Wait}{waveWait}}
+{\footnotesize\ttfamily float Game\+Controller.\+wave\+Wait}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_game_controller_8cs}{Game\+Controller.\+cs}}\end{DoxyCompactItemize}
