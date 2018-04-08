@@ -82,6 +82,10 @@ public class GameController : MonoBehaviour {
 				Instantiate (asteroid, spawnPosition, spawnRotation);
 				score += Mathf.CeilToInt(Time.realtimeSinceStartup);
 				updateScore ();
+				if (gameOver) {
+					updateScore ();
+					break;
+				}
 				yield return new WaitForSeconds (spawnWait);
 			}
 			difficulty = difficulty + 0.0005f;
@@ -97,6 +101,7 @@ public class GameController : MonoBehaviour {
 			if (gameOver) {
 				restartText.text = "To Restart press 'R'";
 				restart = true;
+				updateScore ();
 				break;
 			}
 		}
