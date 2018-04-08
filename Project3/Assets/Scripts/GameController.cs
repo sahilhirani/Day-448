@@ -72,14 +72,11 @@ public class GameController : MonoBehaviour {
 		Debug.Log (Time.time);
 
 		while(true) {
-			//asteroidCount = (asteroidCount * Mathf.CeilToInt(Time.realtimeSinceStartup));
 			score += Mathf.CeilToInt(Time.realtimeSinceStartup);
 			updateScore ();
 			for (int i = 0; i < asteroidCount; i++) {
 				Vector3 spawnPosition = new Vector3 (Random.Range (-spawnValues.x, spawnValues.x), 0.0f, spawnValues.z);
 				Quaternion spawnRotation = Quaternion.identity;
-				Instantiate (asteroid, spawnPosition, spawnRotation);
-				spawnPosition = new Vector3 (Random.Range (-spawnValues.x, spawnValues.x), 0.0f, spawnValues.z);
 				Instantiate (asteroid, spawnPosition, spawnRotation);
 				spawnPosition = new Vector3 (Random.Range (-spawnValues.x, spawnValues.x), 0.0f, spawnValues.z);
 				Instantiate (asteroid, spawnPosition, spawnRotation);
