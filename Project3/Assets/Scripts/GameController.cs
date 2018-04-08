@@ -82,7 +82,7 @@ public class GameController : MonoBehaviour {
 		updateScore ();
 	}
 	void updateScore() {
-		scoreText.text = "Score: " + score.ToString();
+		scoreText.text = "SCORE: " + score.ToString();
 	}
 	public void GameOver(){
 		gameOverText.text = "Game Over!";
