@@ -1064,7 +1064,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: baf85ee922c984ab5a4f3bf68f8cc8a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: -0.25
+  scrollSpeed: -1
   tileSizeZ: 48
 --- !u!1 &1419393555
 GameObject:
