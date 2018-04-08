@@ -8,6 +8,10 @@ public class destroyAsteroid : MonoBehaviour {
 	private int scoreValue = 100;
 	private GameController gameController;
 
+	/* @brief Instantiates any defined objects. More info from Unity at: https://docs.unity3d.com/ScriptReference/MonoBehaviour.Start.html
+	** @pre Asteroids exist in the game.
+	** @post Starts the interaction between asteroids and the game environment. 
+	** @return None*/
 	void Start(){
 		GameObject gameControllerObject = GameObject.FindWithTag ("GameController");
 		if (gameControllerObject != null)
@@ -19,6 +23,11 @@ public class destroyAsteroid : MonoBehaviour {
 			Debug.Log ("Cannot find 'GameController' script");
 		}
 	}
+
+	/* @brief Called whenever asteroids enter the Game Controller. More info from Unity at: https://docs.unity3d.com/ScriptReference/MonoBehaviour.OnTriggerEnter.html
+	** @pre A proper asteroid enters the game.
+	** @post Asteroids are destroid if they come into contact with the player/weapon.
+	** @return None*/
 	void OnTriggerEnter(Collider other) {
 		if(other.tag == "Bounds") {
 			return;

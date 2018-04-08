@@ -7,6 +7,10 @@ public class asteroidMover : MonoBehaviour {
 	//public float asteroidSpeed;
 	private float speed;
 
+	/* @brief Instantiates any defined objects. More info from Unity at: https://docs.unity3d.com/ScriptReference/MonoBehaviour.Start.html
+	** @pre A valid asteroid is created and entered into the game.
+	** @post Gives each asteroid a random speed.
+	** @return None*/
 	void Start() {
 		speed = -5.0f;
 		//multiply by time
