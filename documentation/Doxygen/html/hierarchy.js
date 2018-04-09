@@ -9,6 +9,7 @@ var hierarchy =
       [ "destroybyTime", "classdestroyby_time.html", null ],
       [ "GameController", "class_game_controller.html", null ],
       [ "laserMovement", "classlaser_movement.html", null ],
+      [ "MainMenu", "class_main_menu.html", null ],
       [ "outOfBounds", "classout_of_bounds.html", null ],
       [ "PlayerController", "class_player_controller.html", null ]
     ] ]

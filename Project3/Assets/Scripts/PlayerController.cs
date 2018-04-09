@@ -59,7 +59,7 @@ public class PlayerController : MonoBehaviour {
         //sets the velocity via speed variable
         shipComp.velocity = movement * speed;
         //keeps the ship from going out of bounds
-        shipComp.position = new Vector3(Mathf.Clamp(shipComp.position.x, map.xMin, map.xMax), 0.0f, -3);
+        shipComp.position = new Vector3(Mathf.Clamp(shipComp.position.x, map.xMin, map.xMax), 0.0f, -2);
         //tilts the ship when moving
 		shipComp.rotation = Quaternion.Euler((shipComp.velocity.x * -tilt), -90, -78);
     }

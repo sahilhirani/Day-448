@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['playercontroller_2ecs',['PlayerController.cs',['../_player_controller_8cs.html',1,'']]]
+  ['outofbounds_2ecs',['outOfBounds.cs',['../out_of_bounds_8cs.html',1,'']]]
 ];

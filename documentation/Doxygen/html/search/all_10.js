@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['xmax',['xMax',['../class_map_bounds.html#a072bf7a7bd172ae41b05799223e52550',1,'MapBounds']]],
-  ['xmin',['xMin',['../class_map_bounds.html#a00d303898481a2216ef8aa6101788201',1,'MapBounds']]]
+  ['wavewait',['waveWait',['../class_game_controller.html#ad210270b367c1c439d35e8177d989019',1,'GameController']]]
 ];

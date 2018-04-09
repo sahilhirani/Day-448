@@ -21,6 +21,9 @@ var files_dup =
     [ "laserMovement.cs", "laser_movement_8cs.html", [
       [ "laserMovement", "classlaser_movement.html", "classlaser_movement" ]
     ] ],
+    [ "MainMenu.cs", "_main_menu_8cs.html", [
+      [ "MainMenu", "class_main_menu.html", "class_main_menu" ]
+    ] ],
     [ "outOfBounds.cs", "out_of_bounds_8cs.html", [
       [ "outOfBounds", "classout_of_bounds.html", "classout_of_bounds" ]
     ] ],
