@@ -80,7 +80,7 @@ public class GameController : MonoBehaviour {
 				Instantiate (asteroid, spawnPosition, spawnRotation);
 				spawnPosition = new Vector3 (Random.Range (-spawnValues.x, spawnValues.x), 0.0f, spawnValues.z);
 				Instantiate (asteroid, spawnPosition, spawnRotation);
-				score += Mathf.CeilToInt(Time.realtimeSinceStartup);
+				score += Mathf.CeilToInt(Time.time);
 				updateScore ();
 				if (gameOver) {
 					updateScore ();

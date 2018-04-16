@@ -1,0 +1,33 @@
+Unity Tutorial:
+ - https://unity3d.com/learn/tutorials/s/space-shooter-tutorial
+
+Unity Documentation:
+ - https://docs.unity3d.com/Manual/index.html
+
+Blender Tutorials:
+ - (Spaceship) https://www.youtube.com/watch?v=y8-R1H9e1j0
+ - (Asteroid) https://www.youtube.com/watch?v=o7SdmYKirLI&t
+
+Scrolling Background:
+ - https://unity3d.com/learn/tutorials/topics/2d-game-creation/2d-scrolling-backgrounds
+
+Unity Main Menu:
+ - https://unity3d.com/learn/tutorials/topics/user-interface-ui/creating-main-menu
+
+Blender Low Poly Rocks:
+ - https://blenderartists.org/forum/showthread.php?314175-Addon-LowPoly-Rock
+
+Background Music:
+ - https://www.dl-sounds.com/ (Galaxy Runner)
+
+Unity Score Counter:
+ - https://unity3d.com/learn/tutorials/projects/roll-ball-tutorial/displaying-score-and-text
+
+Laser Sound Effect (Sampled from):
+ - http://soundbible.com/1774-Laser-Machine-Gun.html
+
+Asteroid Explosion (Sampled from):
+ - https://www.youtube.com/watch?v=57nmarMiJrk
+
+Ship Explosion (Edited from):
+ - http://www.freesfx.co.uk/sfx/explosion/
