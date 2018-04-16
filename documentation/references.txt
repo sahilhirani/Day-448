@@ -28,3 +28,6 @@ Laser Sound Effect (Sampled from):
 
 Asteroid Explosion (Sampled from):
  - https://www.youtube.com/watch?v=57nmarMiJrk
+
+Ship Explosion (Edited from):
+ - http://www.freesfx.co.uk/sfx/explosion/
