@@ -23,7 +23,7 @@ To view documentation, navigate to the documentation directory located in this r
 * **Sahil Hirani** - [sahilhirani](https://github.com/sahilhirani)
 * **David Iordan** - [davidiordan](https://github.com/davidiordan)
 
-See also the list of [contributors](https://github.com/sahilhirani/EECS_448/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/sahilhirani/Project3/graphs/contributors) who participated in this project.
 
 ## License
 
