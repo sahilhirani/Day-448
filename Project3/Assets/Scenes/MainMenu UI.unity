@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -279,9 +279,9 @@ RectTransform:
   m_Father: {fileID: 932530625}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 135, y: -45}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &80379929
@@ -540,7 +540,7 @@ GameObject:
   - component: {fileID: 193356266}
   - component: {fileID: 193356265}
   m_Layer: 5
-  m_Name: LeaderBoardButton
+  m_Name: TestsButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -560,9 +560,9 @@ RectTransform:
   m_Father: {fileID: 932530625}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 135, y: -134.37}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &193356265
@@ -911,7 +911,7 @@ GameObject:
   - component: {fileID: 371607127}
   - component: {fileID: 371607126}
   m_Layer: 5
-  m_Name: EasyOption
+  m_Name: RegularOption
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -931,9 +931,9 @@ RectTransform:
   m_Father: {fileID: 833514536}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 135, y: -35}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &371607126
@@ -1187,9 +1187,9 @@ RectTransform:
   m_Father: {fileID: 932530625}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 135, y: -89.685}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &497483737
@@ -1488,10 +1488,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 13
+    m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -1499,7 +1499,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Leaderboard
+  m_Text: Tests
 --- !u!222 &697410717
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1750,7 +1750,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 135, y: -200}
+  m_AnchoredPosition: {x: 135, y: -110}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &752381987
@@ -1867,7 +1867,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &833514536
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2053,7 +2053,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Medium
+  m_Text: Hard
 --- !u!222 &856852403
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2092,9 +2092,9 @@ RectTransform:
   m_Father: {fileID: 932530625}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 135, y: -179.055}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &902393698
@@ -2211,7 +2211,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &932530625
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2678,7 +2678,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Hard
+  m_Text: Insane
 --- !u!222 &1094570176
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2696,7 +2696,7 @@ GameObject:
   - component: {fileID: 1131878675}
   - component: {fileID: 1131878674}
   m_Layer: 5
-  m_Name: Leaderboard
+  m_Name: Tests
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2989,7 +2989,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 135, y: -200}
+  m_AnchoredPosition: {x: 135, y: -120}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1257948246
@@ -3099,7 +3099,7 @@ GameObject:
   - component: {fileID: 1259847073}
   - component: {fileID: 1259847072}
   m_Layer: 5
-  m_Name: LeaderBoardTitle
+  m_Name: HowToPlayTitle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3120,8 +3120,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 65.05294}
-  m_SizeDelta: {x: -0.000061035156, y: -130.10591}
+  m_AnchoredPosition: {x: 0, y: 9.999992}
+  m_SizeDelta: {x: -0.000061035156, y: -20.000015}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1259847072
 MonoBehaviour:
@@ -3242,7 +3242,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Easy
+  m_Text: Regular
 --- !u!222 &1274368107
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3464,7 +3464,7 @@ GameObject:
   - component: {fileID: 1572866518}
   - component: {fileID: 1572866517}
   m_Layer: 5
-  m_Name: HardButton
+  m_Name: InsaneOption
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3484,9 +3484,9 @@ RectTransform:
   m_Father: {fileID: 833514536}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 135, y: -184.37003}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1572866517
@@ -3595,9 +3595,9 @@ RectTransform:
   m_Father: {fileID: 833514536}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 135, y: -259.05505}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1588671179
@@ -3708,7 +3708,7 @@ GameObject:
   - component: {fileID: 1684200548}
   - component: {fileID: 1684200547}
   m_Layer: 5
-  m_Name: MediumOption
+  m_Name: HardOption
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3728,9 +3728,9 @@ RectTransform:
   m_Father: {fileID: 833514536}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 135, y: -109.68501}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1684200547
@@ -3823,7 +3823,7 @@ GameObject:
   - component: {fileID: 1783042896}
   - component: {fileID: 1783042895}
   m_Layer: 5
-  m_Name: LeaderBoardTitle
+  m_Name: TestTitle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3844,8 +3844,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 72.55294}
-  m_SizeDelta: {x: 0, y: -145.10591}
+  m_AnchoredPosition: {x: 0, y: 49.999992}
+  m_SizeDelta: {x: 0, y: -100.000015}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1783042895
 MonoBehaviour:
@@ -3879,7 +3879,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Leaderboard
+  m_Text: Tests
 --- !u!222 &1783042896
 CanvasRenderer:
   m_ObjectHideFlags: 0
