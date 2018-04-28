@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour {
 	//asteroid object in the game
@@ -53,10 +54,14 @@ public class GameController : MonoBehaviour {
 		//checks to see if the user has selected to restart the game
 		if (restart) {
 			//if user has pressed "R" the game restarts
-			if (Input.GetKeyDown (KeyCode.R))
-			{
+			if (Input.GetKeyDown (KeyCode.R)) {
 				//game restarts
 				Application.LoadLevel (Application.loadedLevel);
+			} 
+			//if user has pressed "M" the game goes to the menu
+			else if (Input.GetKeyDown (KeyCode.M)) {
+				//scence changes to menu
+				SceneManager.LoadScene ("MainMenu UI");
 			}
 		}
 
@@ -99,7 +104,7 @@ public class GameController : MonoBehaviour {
 			}
 			yield return new WaitForSeconds (waveWait);
 			if (gameOver) {
-				restartText.text = "To Restart press 'R'";
+				restartText.text = "To Restart press 'R' or Press 'M' to go to the Main Menu";
 				restart = true;
 				updateScore ();
 				break;
