@@ -6,17 +6,17 @@ using UnityEngine.SceneManagement;
 
 
 public class GameController : MonoBehaviour {
-	public Text scoreText;
+	
 	//text that holds the "Game Over" message
 	public Text gameOverText;
 	//text that holds the option to restart the game
 	public Text restartText;
-	//the players score
-	public int score;
+
 	//value that determines if player resarts
 	private bool restart;
 	//value that determines if game is over
 	public bool gameOver;
+	public ScoreTracker scoreTracker;
 	//asteroidSpawner aS;
 
 	/* @brief Instantiates any defined objects. More info from Unity at: https://docs.unity3d.com/ScriptReference/MonoBehaviour.Start.html
@@ -28,8 +28,7 @@ public class GameController : MonoBehaviour {
 		gameOver = false;
 		gameOverText.text = "";
 		restartText.text = "";
-		score = 0;
-		updateScore ();
+
 
 
 	}
@@ -40,12 +39,7 @@ public class GameController : MonoBehaviour {
 	** @return None*/
 	void Update(){
 		//checks to see if the user has selected to restart the game
-		if (gameOver) {
-			updateScore ();
-		} else {
-			score += Mathf.CeilToInt (Time.time);
-			updateScore ();
-		}
+
 		if (restart) {
 			//if user has pressed "R" the game restarts
 			if (Input.GetKeyDown (KeyCode.R)) {
@@ -62,22 +56,12 @@ public class GameController : MonoBehaviour {
 	}
 
 
-	/* @brief Increments the score as the user progresses through the game.
-	** @pre A valid new score is passed in.
-	** @post The score is updated.
-	** @return None*/
-	public void addScore(int newScoreValue){
-		score += newScoreValue;
-		updateScore ();
+	public void addScore(){
+		scoreTracker.addScore (100);
 	}
 
-	/* @brief The score on the game screen is updated.
-	** @pre None
-	** @post Score is updated for the user to see.
-	** @return None*/
-	public void updateScore() {
-		scoreText.text = "SCORE: " + score.ToString();
-	}
+
+
 
 	/* @brief Displays the "Game Over" text after the user's ship is destroyed.
 	** @pre None
@@ -88,7 +72,7 @@ public class GameController : MonoBehaviour {
 		gameOver = true;
 		restart = true;
 		restartText.text = "To Restart press 'R' or Press 'M' to go to the Main Menu";
-		scoreText.text = "";
+		//scoreText.text = "";
 	}
 
 	public bool GO(){
