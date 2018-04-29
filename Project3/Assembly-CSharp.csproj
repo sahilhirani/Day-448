@@ -64,6 +64,7 @@
      <Compile Include="Assets\MainMenu UI\Scripts\TiltWindow.cs" />
      <Compile Include="Assets\Scripts\asteroidMover.cs" />
      <Compile Include="Assets\Scripts\asteroidRotator.cs" />
+     <Compile Include="Assets\Scripts\asteroidSpawner.cs" />
      <Compile Include="Assets\Scripts\BGScroller.cs" />
      <Compile Include="Assets\Scripts\destroyAsteroid.cs" />
      <Compile Include="Assets\Scripts\destroybyTime.cs" />
