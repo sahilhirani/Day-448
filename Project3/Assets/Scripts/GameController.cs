@@ -17,6 +17,7 @@ public class GameController : MonoBehaviour {
 	//value that determines if game is over
 	public bool gameOver;
 	public ScoreTracker scoreTracker;
+	public PlayerController player;
 	//asteroidSpawner aS;
 
 	/* @brief Instantiates any defined objects. More info from Unity at: https://docs.unity3d.com/ScriptReference/MonoBehaviour.Start.html
@@ -38,8 +39,17 @@ public class GameController : MonoBehaviour {
 	** @post The game is updated every frame.
 	** @return None*/
 	void Update(){
-		//checks to see if the user has selected to restart the game
+		if (Input.GetKeyDown (KeyCode.T)) {
+			Time.timeScale = 0.5f;
+			player.speed *= 2;
+			player.tilt = 2;
+		}
+		if (Input.GetKeyDown (KeyCode.Y)) {
+			Time.timeScale = 1.0f;
+			player.speed = 8;
+		}
 
+		//checks to see if the user has selected to restart the game
 		if (restart) {
 			//if user has pressed "R" the game restarts
 			if (Input.GetKeyDown (KeyCode.R)) {
