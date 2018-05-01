@@ -31,3 +31,6 @@ Asteroid Explosion (Sampled from):
 
 Ship Explosion (Edited from):
  - http://www.freesfx.co.uk/sfx/explosion/
+
+Power Up Tutorial:
+ - https://www.youtube.com/watch?v=CLSiRf_OrBk
