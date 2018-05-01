@@ -1170,6 +1170,7 @@ MonoBehaviour:
   restartText: {fileID: 2034875913}
   gameOver: 0
   scoreTracker: {fileID: 787792226}
+  player: {fileID: 746692779}
 --- !u!4 &1943211464
 Transform:
   m_ObjectHideFlags: 0

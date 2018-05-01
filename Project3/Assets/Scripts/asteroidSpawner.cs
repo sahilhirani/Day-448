@@ -19,7 +19,7 @@ public class asteroidSpawner : MonoBehaviour {
 	private float difficulty = 0.0017f;
 	private bool gameover;
 	public GameController gameController;
-
+	
 	//the players score
 	private int score;
 	// Use this for initialization

@@ -13,7 +13,7 @@ public class asteroidMover : MonoBehaviour {
 	** @return None*/
 	void Start() {
 		speed = -5.0f;
-		//multiply by time
+		//multiply speed by a random integer between 2 and 5
 		GetComponent<Rigidbody> ().velocity = transform.forward * speed * Random.Range (2, 5);
 	}
 }
