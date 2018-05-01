@@ -48,4 +48,9 @@ public class destroyAsteroid : MonoBehaviour {
 		Destroy (gameObject);
 		gameController.addScore();
 	}
+	public void destroy() {
+		Instantiate (explosion, transform.position, transform.rotation);
+		Destroy (gameObject);
+		gameController.addScore();
+	}
 }
