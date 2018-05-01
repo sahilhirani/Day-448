@@ -832,6 +832,10 @@ Prefab:
       propertyPath: m_IsKinematic
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1478281353056508, guid: d0050e6cbd8ee413288bc2ed38e425a2, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d0050e6cbd8ee413288bc2ed38e425a2, type: 2}
   m_IsPrefabParent: 0
