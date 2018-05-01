@@ -22,7 +22,6 @@ GameObject:
   - component: {fileID: 54888794480928276}
   - component: {fileID: 114388876010522570}
   - component: {fileID: 114580201151341032}
-  - component: {fileID: 114862985150027614}
   m_Layer: 0
   m_Name: PwrUp_Bomb
   m_TagString: PowerUp
@@ -41,6 +40,9 @@ GameObject:
   - component: {fileID: 33484157178399850}
   - component: {fileID: 23315497337288594}
   - component: {fileID: 136720440439724870}
+  - component: {fileID: 114622424061334558}
+  - component: {fileID: 114981786731673034}
+  - component: {fileID: 54822802496192704}
   m_Layer: 0
   m_Name: powerup
   m_TagString: Untagged
@@ -117,6 +119,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1552716924543632}
   m_Mesh: {fileID: 4300000, guid: da24d5534a9484fcb9164cd589cd5afe, type: 3}
+--- !u!54 &54822802496192704
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1552716924543632}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 4
+  m_CollisionDetection: 0
 --- !u!54 &54888794480928276
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -155,18 +172,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 932a79522484847d6b4a118d89066d45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114862985150027614
+--- !u!114 &114622424061334558
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1478281353056508}
+  m_GameObject: {fileID: 1552716924543632}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c84610e33a025478f89b1f51f072fd34, type: 3}
+  m_Script: {fileID: 11500000, guid: 06fac255df44bb44fb5f80ebff0b9085, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifetime: 8
+  time: 4
+  effect: {fileID: 1100594269583760, guid: e0354cb63394e2c4a96b942dee1d2555, type: 2}
+--- !u!114 &114981786731673034
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1552716924543632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 932a79522484847d6b4a118d89066d45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!136 &136720440439724870
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -174,7 +203,7 @@ CapsuleCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1552716924543632}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 1.0318671
   m_Height: 1.8682462
