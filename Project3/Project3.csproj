@@ -245,6 +245,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\_Creepy_Cat\3D Games Effects Pack Free\Example_02\InstanceExample.cs" />
+    <Compile Include="Assets\EffectExamples\Shared\Scripts\DecalDestroyer.cs" />
+    <Compile Include="Assets\EffectExamples\Shared\Scripts\ExtinguishableFire.cs" />
+    <Compile Include="Assets\EffectExamples\Shared\Scripts\GunAim.cs" />
+    <Compile Include="Assets\EffectExamples\Shared\Scripts\GunShoot.cs" />
+    <Compile Include="Assets\EffectExamples\Shared\Scripts\ParticleCollision.cs" />
+    <Compile Include="Assets\EffectExamples\Shared\Scripts\ParticleExamples.cs" />
+    <Compile Include="Assets\EffectExamples\Shared\Scripts\ParticleMenu.cs" />
+    <Compile Include="Assets\KY_effects\Script\ConGUI.cs" />
+    <Compile Include="Assets\KY_effects\Script\Lighting.cs" />
     <Compile Include="Assets\MainMenu UI\Scripts\ActiveStateToggler.cs" />
     <Compile Include="Assets\MainMenu UI\Scripts\ApplicationManager.cs" />
     <Compile Include="Assets\MainMenu UI\Scripts\ChangeColor.cs" />
@@ -275,6 +284,7 @@
     <Compile Include="Assets\Scripts\outOfBounds.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\ScoreTracker.cs" />
+    <Compile Include="Assets\Scripts\shieldPowerUp.cs" />
     <Compile Include="Assets\Scripts\shrinkPowerUp.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
@@ -311,6 +321,8 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\EffectExamples\Shared\Shaders\SurfaceShader_VC.shader" />
+    <None Include="Assets\KY_effects\MagicEffectsPackFree\ReadMe.txt" />
     <None Include="Assets\MainMenu UI\Fonts\Jupiter\LICENSE.txt" />
     <None Include="Assets\MainMenu UI\Materials\UI-Default-No-Alpha.shader" />
     <None Include="Assets\MainMenu UI\Textures and Sprites\SF UI\Background\LICENSE.txt" />
