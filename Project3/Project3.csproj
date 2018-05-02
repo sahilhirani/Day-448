@@ -14,7 +14,6 @@
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
     <CompilerResponseFile></CompilerResponseFile>
-    <UnityProjectGenerator>VSTU</UnityProjectGenerator>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>2017.4.2f2</UnityVersion>
@@ -280,6 +279,7 @@
     <Compile Include="Assets\Scripts\destroybyTime.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
     <Compile Include="Assets\Scripts\laserMovement.cs" />
+    <Compile Include="Assets\Scripts\laserPowerUp.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Scripts\outOfBounds.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
@@ -287,6 +287,7 @@
     <Compile Include="Assets\Scripts\shieldPowerUp.cs" />
     <Compile Include="Assets\Scripts\shrinkPowerUp.cs" />
     <Compile Include="Assets\Scripts\timePowerUp.cs" />
+    <Compile Include="Assets\testGC.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
@@ -320,6 +321,15 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
+    <Compile Include="Assets\VolumetricLines\ExampleScenes\ExampleScripts\CannonBehavior.cs" />
+    <Compile Include="Assets\VolumetricLines\ExampleScenes\ExampleScripts\CreateSinShapedLineStrip.cs" />
+    <Compile Include="Assets\VolumetricLines\ExampleScenes\ExampleScripts\ShotBehavior.cs" />
+    <Compile Include="Assets\VolumetricLines\Scripts\Utils\TransformExtensionMethods.cs" />
+    <Compile Include="Assets\VolumetricLines\Scripts\VolumetricLineBehavior.cs" />
+    <Compile Include="Assets\VolumetricLines\Scripts\VolumetricLineSettings.cs" />
+    <Compile Include="Assets\VolumetricLines\Scripts\VolumetricLineStripBehavior.cs" />
+    <Compile Include="Assets\VolumetricLines\Scripts\VolumetricLineVertexData.cs" />
+    <Compile Include="Assets\VolumetricLines\Scripts\VolumetricMultiLineBehavior.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\EffectExamples\Shared\Shaders\SurfaceShader_VC.shader" />
@@ -347,6 +357,14 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\VolumetricLines\Shaders\Additive.shader" />
+    <None Include="Assets\VolumetricLines\Shaders\AlphaBlended.shader" />
+    <None Include="Assets\VolumetricLines\Shaders\Fast-Additive.shader" />
+    <None Include="Assets\VolumetricLines\Shaders\Fast-AlphaBlended.shader" />
+    <None Include="Assets\VolumetricLines\Shaders\Strip-Additive.shader" />
+    <None Include="Assets\VolumetricLines\Shaders\Strip-AlphaBlended.shader" />
+    <None Include="Assets\VolumetricLines\Shaders\_SimpleShader.cginc" />
+    <None Include="Assets\VolumetricLines\Shaders\_StripShader.cginc" />
     <None Include="Assets\_Creepy_Cat\3D Games Effects Pack Free\Example_02\Help Readme SOS.txt" />
     <None Include="Assets\_Creepy_Cat\3D Games Effects Pack Free\_FAQ - Informations\Help Readme SOS.txt" />
   </ItemGroup>

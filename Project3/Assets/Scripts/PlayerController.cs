@@ -14,12 +14,14 @@ public class PlayerController : MonoBehaviour {
     private Rigidbody shipComp;
     public MapBounds map;
     public GameObject Laser;
+    public GameObject upgradedLaser;
     public Transform startLaser;
     //variable declaration of the speed of the ship, the tilt when moving, the rate that it can fire, and the shot time checker
     public float speed;
     public float tilt;
     public float fireRate;
     private float nextShot;
+    public bool laserUpgrade = false;
 
     /* @brief Instantiates any defined objects. More info from Unity at: https://docs.unity3d.com/ScriptReference/MonoBehaviour.Start.html
 	** @pre A valid ship model exists.
@@ -35,15 +37,22 @@ public class PlayerController : MonoBehaviour {
 	** @post The game is updated every frame.
 	** @return None*/
     void Update() {
-        //checks if either the keyboard or right mouse button is clicked, and if enough time has passed for another shot
-        if ((Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space)) && Time.time > nextShot)
+        if (laserUpgrade == false)
         {
-            //iterates the next time a shot is available by the ship's rate of fire
-            nextShot = Time.time + fireRate;
-            //instantiates the laser object using the spawn location's position and rotation
-            Instantiate(Laser, startLaser.position, startLaser.rotation);
-			//play laser sound
-			GetComponent<AudioSource>().Play();
+            //checks if either the keyboard or right mouse button is clicked, and if enough time has passed for another shot
+            if ((Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space)) && Time.time > nextShot)
+            {
+                //iterates the next time a shot is available by the ship's rate of fire
+                nextShot = Time.time + fireRate;
+                //instantiates the laser object using the spawn location's position and rotation
+                Instantiate(Laser, startLaser.position, startLaser.rotation);
+                //play laser sound
+                GetComponent<AudioSource>().Play();
+            }
+        }
+        else
+        {
+            Instantiate(upgradedLaser, startLaser.position, startLaser.rotation);
         }
     }
 

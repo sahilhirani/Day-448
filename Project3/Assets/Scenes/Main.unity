@@ -393,8 +393,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 659213097}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 5.6}
-  m_LocalScale: {x: 24, y: 1, z: 48}
+  m_LocalPosition: {x: 0, y: 0, z: 6.46}
+  m_LocalScale: {x: 24, y: 2, z: 48}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -629,10 +629,12 @@ MonoBehaviour:
     zMin: -4.5
     zMax: 14.5
   Laser: {fileID: 1681415053133222, guid: 092b4322193a32e469e89eebbfb0794e, type: 2}
+  upgradedLaser: {fileID: 0}
   startLaser: {fileID: 1419393556}
   speed: 8
   tilt: 4
   fireRate: 0.1
+  laserUpgrade: 0
 --- !u!64 &746692780
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1185,10 +1187,12 @@ MonoBehaviour:
     zMin: -4.5
     zMax: 14.5
   Laser: {fileID: 0}
+  upgradedLaser: {fileID: 0}
   startLaser: {fileID: 0}
   speed: 8
   tilt: 0
   fireRate: 0
+  laserUpgrade: 0
 --- !u!54 &1875636782
 Rigidbody:
   m_ObjectHideFlags: 0
