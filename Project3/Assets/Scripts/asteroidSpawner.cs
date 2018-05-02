@@ -23,16 +23,25 @@ public class asteroidSpawner : MonoBehaviour {
 	public GameObject[] powerUps;
 	private int randomNum;
 	private int spawnNum = 2000;
-	
+	public int difficultyNum = 0;
+
 	//the players score
 	private int score;
 	// Use this for initialization
 	void Start () {
 		gameover = false;
-		StartCoroutine(spawnWaves());
+		if (difficultyNum == 1) {
+			StartCoroutine (spawnWavesE ());
+		} else if (difficultyNum == 2) {
+			StartCoroutine (spawnWaves ());
+		} else if (difficultyNum == 3) {
+			StartCoroutine (spawnWavesI ());
+		} else if (difficultyNum == 0) {
+			StartCoroutine (spawnWavesI ());
+		}
 
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
 		gameover = gameController.GO ();
@@ -80,7 +89,75 @@ public class asteroidSpawner : MonoBehaviour {
 			}
 		}
 	}
-		
+
+	IEnumerator spawnWavesE() {
+		yield return new WaitForSeconds (startWait);
+
+		Debug.Log (Time.time);
+
+		while(true) {
+			for (int i = 0; i < asteroidCount; i++) {
+				Vector3 spawnPosition = new Vector3 (Random.Range (-spawnValues.x, spawnValues.x), 0.0f, spawnValues.z);
+				Quaternion spawnRotation = Quaternion.identity;
+				Instantiate (asteroid, spawnPosition, spawnRotation);
+
+				if (gameover) {
+					break;
+				}
+				yield return new WaitForSeconds (spawnWait);
+			}
+			difficulty = difficulty + 0.0005f;
+			waveWait = waveWait - difficulty;
+			asteroidCount = asteroidCount + 1;
+			if (asteroidCount > 20) {
+				asteroidCount = 10;
+			}
+			if (waveWait <= 0.12f) {
+				waveWait = 0.2f;
+			}
+			yield return new WaitForSeconds (waveWait);
+			if (gameover) {
+				break;
+			}
+		}
+	}
+	IEnumerator spawnWavesI() {
+		yield return new WaitForSeconds (startWait);
+
+		Debug.Log (Time.time);
+
+		while(true) {
+			for (int i = 0; i < asteroidCount; i++) {
+				Vector3 spawnPosition = new Vector3 (Random.Range (-spawnValues.x, spawnValues.x), 0.0f, spawnValues.z);
+				Quaternion spawnRotation = Quaternion.identity;
+				Instantiate (asteroid, spawnPosition, spawnRotation);
+				spawnPosition = new Vector3 (Random.Range (-spawnValues.x, spawnValues.x), 0.0f, spawnValues.z);
+				Instantiate (asteroid, spawnPosition, spawnRotation);
+				spawnPosition = new Vector3 (Random.Range (-spawnValues.x, spawnValues.x), 0.0f, spawnValues.z);
+				Instantiate (asteroid, spawnPosition, spawnRotation);
+				spawnPosition = new Vector3 (Random.Range (-spawnValues.x, spawnValues.x), 0.0f, spawnValues.z);
+				Instantiate (asteroid, spawnPosition, spawnRotation);
+				if (gameover) {
+					break;
+				}
+				yield return new WaitForSeconds (spawnWait);
+			}
+			difficulty = difficulty + 0.0005f;
+			waveWait = waveWait - difficulty;
+			asteroidCount = asteroidCount + 1;
+			if (asteroidCount > 20) {
+				asteroidCount = 10;
+			}
+			if (waveWait <= 0.12f) {
+				waveWait = 0.2f;
+			}
+			yield return new WaitForSeconds (waveWait);
+			if (gameover) {
+				break;
+			}
+		}
+	}	
+
 	void spawnPU(){
 		Vector3 spawnPosition = new Vector3 (Random.Range (-spawnValues.x, spawnValues.x), 0.0f, spawnValues.z);
 		randomNum = Random.Range (0, 5);
