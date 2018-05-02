@@ -14,6 +14,12 @@ public class asteroidMover : MonoBehaviour {
 	void Start() {
 		speed = -5.0f;
 		//multiply speed by a random integer between 2 and 5
-		GetComponent<Rigidbody> ().velocity = transform.forward * speed * Random.Range (2, 5);
+		if(GetComponent<Rigidbody>().tag == "PowerUp"){
+			GetComponent<Rigidbody> ().velocity = transform.forward * speed * Random.Range (2, 3);
+		}
+		else{
+			GetComponent<Rigidbody> ().velocity = transform.forward * speed * Random.Range (2, 5);
+		}
+
 	}
 }

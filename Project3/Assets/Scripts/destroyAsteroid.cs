@@ -43,6 +43,10 @@ public class destroyAsteroid : MonoBehaviour {
 			return;
 		}
 
+		if (other.tag == "PowerUp") {
+			return;
+		}
+
 		//this can be commented out with a powerup (maybe have it called 'Super Nova')
 		Destroy (gameObject);
 		gameController.addScore();

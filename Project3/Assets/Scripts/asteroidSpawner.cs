@@ -19,6 +19,10 @@ public class asteroidSpawner : MonoBehaviour {
 	private float difficulty = 0.0017f;
 	private bool gameover;
 	public GameController gameController;
+	public ScoreTracker scoreTracker;
+	public GameObject[] powerUps;
+	private int randomNum;
+	private int spawnNum = 2000;
 	
 	//the players score
 	private int score;
@@ -26,11 +30,16 @@ public class asteroidSpawner : MonoBehaviour {
 	void Start () {
 		gameover = false;
 		StartCoroutine(spawnWaves());
+
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		gameover = gameController.GO ();
+		if (((scoreTracker.score >= spawnNum)) && (scoreTracker.score != 0)) {
+			spawnNum += 2000;
+			spawnPU ();
+		}
 	}
 
 	/* @brief Spawns waves of asteroids. Allows for there to be a wait time before each wave.
@@ -50,6 +59,7 @@ public class asteroidSpawner : MonoBehaviour {
 				Instantiate (asteroid, spawnPosition, spawnRotation);
 				spawnPosition = new Vector3 (Random.Range (-spawnValues.x, spawnValues.x), 0.0f, spawnValues.z);
 				Instantiate (asteroid, spawnPosition, spawnRotation);
+
 				if (gameover) {
 					break;
 				}
@@ -71,4 +81,10 @@ public class asteroidSpawner : MonoBehaviour {
 		}
 	}
 		
+	void spawnPU(){
+		Vector3 spawnPosition = new Vector3 (Random.Range (-spawnValues.x, spawnValues.x), 0.0f, spawnValues.z);
+		randomNum = Random.Range (0, 5);
+		Quaternion spawnRotation = Quaternion.identity;
+		Instantiate (powerUps [randomNum], spawnPosition, spawnRotation);
+	}
 }
