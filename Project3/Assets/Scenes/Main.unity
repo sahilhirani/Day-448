@@ -1289,6 +1289,7 @@ MonoBehaviour:
   - {fileID: 1478281353056508, guid: 4eff13669ad1249079f7ae9dc4b3bd02, type: 2}
   - {fileID: 1478281353056508, guid: 1f79a5f47053541c58ee74128e9e0ee6, type: 2}
   - {fileID: 1478281353056508, guid: 269ebfdf2d3404f648c15aad62f57372, type: 2}
+  difficultyNum: 0
 --- !u!1 &1990587321
 GameObject:
   m_ObjectHideFlags: 0

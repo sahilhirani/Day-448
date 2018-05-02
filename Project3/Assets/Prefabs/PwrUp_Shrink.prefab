@@ -23,7 +23,6 @@ GameObject:
   - component: {fileID: 114388876010522570}
   - component: {fileID: 114580201151341032}
   - component: {fileID: 114862985150027614}
-  - component: {fileID: 135399578931816508}
   m_Layer: 0
   m_Name: PwrUp_Shrink
   m_TagString: PowerUp
@@ -42,6 +41,7 @@ GameObject:
   - component: {fileID: 33484157178399850}
   - component: {fileID: 23315497337288594}
   - component: {fileID: 136720440439724870}
+  - component: {fileID: 114656371886077482}
   m_Layer: 0
   m_Name: powerup
   m_TagString: Untagged
@@ -156,6 +156,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 932a79522484847d6b4a118d89066d45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114656371886077482
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1552716924543632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06fac255df44bb44fb5f80ebff0b9085, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 4
+  effect: {fileID: 1100594269583760, guid: 3e4ec3296bad4704880890d8ae860c01, type: 2}
+  explosion: {fileID: 0}
 --- !u!114 &114862985150027614
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -168,18 +182,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 8
---- !u!135 &135399578931816508
-SphereCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1478281353056508}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.63
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!136 &136720440439724870
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -187,7 +189,7 @@ CapsuleCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1552716924543632}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 1.0318671
   m_Height: 1.8682462
