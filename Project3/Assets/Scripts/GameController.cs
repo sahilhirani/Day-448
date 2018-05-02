@@ -19,12 +19,15 @@ public class GameController : MonoBehaviour {
 	public ScoreTracker scoreTracker;
 	public PlayerController player;
 	//asteroidSpawner aS;
+	AudioSource audioSource;
 
 	/* @brief Instantiates any defined objects. More info from Unity at: https://docs.unity3d.com/ScriptReference/MonoBehaviour.Start.html
 	** @pre The game objects are valid and the game is prepared to be run.
 	** @post Score count is started and the game begins spawning asteroids.
 	** @return None*/
 	void Start() {
+		audioSource = GetComponent<AudioSource>();
+		audioSource.volume = PlayerPrefs.GetFloat("SliderVolumeLevel", audioSource.volume);
 		restart = false;
 		gameOver = false;
 		gameOverText.text = "";
