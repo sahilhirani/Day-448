@@ -37,7 +37,11 @@ public class destroyAsteroid : MonoBehaviour {
 		}
 
 		Instantiate (explosion, transform.position, transform.rotation);
-
+        if (other.tag == "Shield")
+        {
+            Destroy (gameObject);
+            return;
+        }
 		if(other.tag == "Player") {
 			Instantiate (playerExplosion, other.transform.position, other.transform.rotation);
 			Destroy (other.gameObject);

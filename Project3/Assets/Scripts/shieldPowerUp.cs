@@ -23,10 +23,11 @@ public class shieldPowerUp : MonoBehaviour
     IEnumerator pickup(Collider player)
     {
         //Effect on pickup of powerup at the player's current position and rotation
+        GameObject toFollow = GameObject.FindGameObjectWithTag("ToFollow");
+        GameObject myShield = Instantiate(shieldFX, player.transform.position, Quaternion.identity);
+        myShield.transform.parent = toFollow.transform;
         GameObject myEffect = Instantiate(effect, player.transform.position, player.transform.rotation);
         myEffect.transform.parent = player.transform;
-        GameObject myShield = Instantiate(shieldFX, player.transform.position, player.transform.rotation);
-        myShield.transform.parent = player.transform;
         //removes power up visuals after pickup
         GetComponent<MeshRenderer>().enabled = false;
         GetComponent<Collider>().enabled = false;
@@ -34,6 +35,7 @@ public class shieldPowerUp : MonoBehaviour
         yield return new WaitForSeconds(time);
         //destroys power up object when effects wear off
         GameObject powerUp = GameObject.FindGameObjectWithTag("PowerUp");
+        Destroy(powerUp);
         Destroy(gameObject);
     }
 }

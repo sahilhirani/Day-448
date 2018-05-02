@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 33484157178399850}
   - component: {fileID: 23315497337288594}
   - component: {fileID: 136720440439724870}
-  - component: {fileID: 114725644867755640}
+  - component: {fileID: 114036572293920846}
   m_Layer: 0
   m_Name: powerup
   m_TagString: Untagged
@@ -133,6 +133,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 0
+--- !u!114 &114036572293920846
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1552716924543632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01b72e152e2ea844dadebf28fa1f873e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 4
+  effect: {fileID: 1100594269583760, guid: 16740c95d8b37b34bbdc1ff0e263f012, type: 2}
+  shieldFX: {fileID: 120638, guid: f8efad34b6fb67641a44679362c8f942, type: 2}
 --- !u!114 &114388876010522570
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -156,20 +170,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 932a79522484847d6b4a118d89066d45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114725644867755640
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1552716924543632}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06fac255df44bb44fb5f80ebff0b9085, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  time: 4
-  effect: {fileID: 1100594269583760, guid: 16740c95d8b37b34bbdc1ff0e263f012, type: 2}
-  explosion: {fileID: 0}
 --- !u!114 &114862985150027614
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -28,7 +28,7 @@ public class shrinkPowerUp : MonoBehaviour
         //Effect on pickup of powerup at the player's current position and rotation
         Instantiate(effect, player.transform.position, player.transform.rotation);
         //shrinks ship to half size
-        player.transform.localScale = new Vector3(0.2f, 0.4f, 0.5f);
+        player.transform.localScale /= 2;
         PlayerController playerVar = player.GetComponent<PlayerController>();
         //doubles the player's speed
         playerVar.speed *= 2;
@@ -37,10 +37,10 @@ public class shrinkPowerUp : MonoBehaviour
         GetComponent<Collider>().enabled = false;
         Debug.Log("pre wait");
         //waits for the given power up duration
-        yield return new WaitForSeconds(4.0f);
+        yield return new WaitForSeconds(time);
         Debug.Log("after wait");
         //ship grows to original size
-        player.transform.localScale = new Vector3(0.4f, 0.8f, 0.10f);
+        player.transform.localScale *= 2;
         //player's speed returns to original value
         playerVar.speed /= 2;
         //destroys power up object when effects wear off
