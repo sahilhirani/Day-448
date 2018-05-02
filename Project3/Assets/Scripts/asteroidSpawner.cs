@@ -37,7 +37,7 @@ public class asteroidSpawner : MonoBehaviour {
 		} else if (difficultyNum == 3) {
 			StartCoroutine (spawnWavesI ());
 		} else if (difficultyNum == 0) {
-			StartCoroutine (spawnWavesI ());
+			StartCoroutine (spawnWavesE ());
 		}
 
 	}
@@ -160,7 +160,7 @@ public class asteroidSpawner : MonoBehaviour {
 
 	void spawnPU(){
 		Vector3 spawnPosition = new Vector3 (Random.Range (-spawnValues.x, spawnValues.x), 0.0f, spawnValues.z);
-		randomNum = Random.Range (0, 5);
+		randomNum = Mathf.RoundToInt (Random.Range (0, 5));
 		Quaternion spawnRotation = Quaternion.identity;
 		Instantiate (powerUps [randomNum], spawnPosition, spawnRotation);
 	}

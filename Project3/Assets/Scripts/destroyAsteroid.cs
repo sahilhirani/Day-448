@@ -29,6 +29,9 @@ public class destroyAsteroid : MonoBehaviour {
 	** @post Asteroids are destroid if they come into contact with the player/weapon.
 	** @return None*/
 	void OnTriggerEnter(Collider other) {
+		if (other.tag == "PowerUp") {
+			return;
+		}
 		if(other.tag == "Bounds") {
 			return;
 		}
@@ -43,12 +46,11 @@ public class destroyAsteroid : MonoBehaviour {
 			return;
 		}
 
-		if (other.tag == "PowerUp") {
-			return;
-		}
+
 
 		//this can be commented out with a powerup (maybe have it called 'Super Nova')
 		Destroy (gameObject);
+		Destroy (other.gameObject);
 		gameController.addScore();
 	}
 }

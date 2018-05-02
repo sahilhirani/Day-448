@@ -39,16 +39,6 @@ public class GameController : MonoBehaviour {
 	** @post The game is updated every frame.
 	** @return None*/
 	void Update(){
-		if (Input.GetKeyDown (KeyCode.T)) {
-			Time.timeScale = 0.5f;
-			player.speed *= 2;
-			player.tilt = 2;
-		}
-		if (Input.GetKeyDown (KeyCode.Y)) {
-			Time.timeScale = 1.0f;
-			player.speed = 8;
-		}
-
 		//checks to see if the user has selected to restart the game
 		if (restart) {
 			//if user has pressed "R" the game restarts
