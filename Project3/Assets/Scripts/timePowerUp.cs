@@ -9,7 +9,6 @@ public class timePowerUp : MonoBehaviour
     public float duration;
     // The effect that plays when the power up is hit
     public GameObject effect;
-    // The player
 
     //Executes on powerup collision
     public void OnTriggerEnter(Collider other)
@@ -23,7 +22,11 @@ public class timePowerUp : MonoBehaviour
             Debug.Log("Post -StartCoroutine-\n");
         }
     }
-    //Player powerup pickup effects
+    
+    /* @brief Creates the action for the power up and give the player some ability.
+	** @pre The player has hit a power up.
+	** @post The game slows down so that the player can make more swift decisions.
+	** @return A time to wait*/
     IEnumerator pickup(Collider player)
     {
         Debug.Log("In coroutine\n");

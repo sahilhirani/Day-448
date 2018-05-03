@@ -8,7 +8,9 @@ public class shieldPowerUp : MonoBehaviour
     public float time;
     //variable for the effect on pickup
     public GameObject effect;
+    //the shield that appears
     public GameObject shieldFX;
+
     //Executes on powerup collision
     public void OnTriggerEnter(Collider other)
     {
@@ -19,7 +21,11 @@ public class shieldPowerUp : MonoBehaviour
             StartCoroutine(pickup(other));
         }
     }
-    //Player powerup pickup effects
+    
+    /* @brief Creates the action for the power up and give the player some ability.
+	** @pre The player has hit a power up.
+	** @post The player ship is wrapped with a shield to prevent damage for some amount of time.
+	** @return A time to wait*/
     IEnumerator pickup(Collider player)
     {
         //Effect on pickup of powerup at the player's current position and rotation

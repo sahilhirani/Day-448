@@ -4,17 +4,26 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class ScoreTracker : MonoBehaviour {
+	// The game controller
 	public GameController gameController;
+	// The text that keeps the score
 	public Text scoreText;
+	// The numerical value for the score
 	public int score = 0;
 
 
-	// Use this for initialization
+	/* @brief Instantiates any defined objects. More info from Unity at: https://docs.unity3d.com/ScriptReference/MonoBehaviour.Start.html
+	** @pre The score text exists in the game.
+	** @post The score is updated.
+	** @return None*/
 	void Start () {
 		updateScore ();
 	}
 	
-	// Update is called once per frame
+	/* @brief Updates after every game frame to increase the score. More info from Unity at: https://docs.unity3d.com/ScriptReference/MonoBehaviour.Update.html
+	** @pre None
+	** @post The game is updated every frame.
+	** @return None*/
 	void Update () {
 		if (gameController.GO()) {
 			updateScore ();

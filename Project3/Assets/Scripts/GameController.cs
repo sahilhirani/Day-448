@@ -11,14 +11,15 @@ public class GameController : MonoBehaviour {
 	public Text gameOverText;
 	//text that holds the option to restart the game
 	public Text restartText;
-
 	//value that determines if player resarts
 	private bool restart;
 	//value that determines if game is over
 	public bool gameOver;
+	//the actual in-game score
 	public ScoreTracker scoreTracker;
+	//the player
 	public PlayerController player;
-	//asteroidSpawner aS;
+	//the sound for the game
 	AudioSource audioSource;
 
 	/* @brief Instantiates any defined objects. More info from Unity at: https://docs.unity3d.com/ScriptReference/MonoBehaviour.Start.html
@@ -32,8 +33,6 @@ public class GameController : MonoBehaviour {
 		gameOver = false;
 		gameOverText.text = "";
 		restartText.text = "";
-
-
 
 	}
 
@@ -58,13 +57,13 @@ public class GameController : MonoBehaviour {
 
 	}
 
-
+	/* @brief Increments the score
+	** @pre The score is being tracked
+	** @post Score increases by 100 points
+	** @return None*/
 	public void addScore(){
 		scoreTracker.addScore (100);
 	}
-
-
-
 
 	/* @brief Displays the "Game Over" text after the user's ship is destroyed.
 	** @pre None

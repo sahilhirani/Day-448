@@ -20,8 +20,8 @@ public class testGC : MonoBehaviour {
 	public GameObject asteroid;
 	//spawn location for the asteroid
 	public Vector3 spawnValues;
+	// Array of all 5 powerups
 	public GameObject[] powerUps;
-	//asteroidSpawner aS;
 
 	/* @brief Instantiates any defined objects. More info from Unity at: https://docs.unity3d.com/ScriptReference/MonoBehaviour.Start.html
 	** @pre The game objects are valid and the game is prepared to be run.
@@ -90,13 +90,13 @@ public class testGC : MonoBehaviour {
 
 	}
 
-
+	/* @brief Increments the score
+	** @pre The score is being tracked
+	** @post Score increases by 100 points
+	** @return None*/
 	public void addScore(){
 		scoreTracker.addScore (100);
 	}
-
-
-
 
 	/* @brief Displays the "Game Over" text after the user's ship is destroyed.
 	** @pre None
@@ -110,6 +110,10 @@ public class testGC : MonoBehaviour {
 		//scoreText.text = "";
 	}
 
+	/* @brief Checker for if the game has ended
+	** @pre None
+	** @post A boolean holding whether the game has ended is returned.
+	** @return Boolean*/
 	public bool GO(){
 		if (gameOver) {
 			return true;

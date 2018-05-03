@@ -8,6 +8,7 @@ public class shrinkPowerUp : MonoBehaviour
     public float time;
     //variable for the effect on pickup
     public GameObject effect;
+
     //Executes on powerup collision
     public void OnTriggerEnter(Collider other)
     {
@@ -21,7 +22,11 @@ public class shrinkPowerUp : MonoBehaviour
             Debug.Log("post coroutine");
         }
     }
-    //Player powerup pickup effects
+
+    /* @brief Creates the action for the power up and give the player some ability.
+	** @pre The player has hit a power up.
+	** @post The player ship shrinks for a period of time then reverts.
+	** @return A time to wait*/
     IEnumerator pickup(Collider player)
     {
         Debug.Log("Start of pickup function");
