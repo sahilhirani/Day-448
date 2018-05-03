@@ -629,7 +629,8 @@ MonoBehaviour:
     zMin: -4.5
     zMax: 14.5
   Laser: {fileID: 1681415053133222, guid: 092b4322193a32e469e89eebbfb0794e, type: 2}
-  upgradedLaser: {fileID: 0}
+  upgradedLaser: {fileID: 1681415053133222, guid: 9d684f1605b954fb49901a57c7b0b8f0,
+    type: 2}
   startLaser: {fileID: 1419393556}
   speed: 8
   tilt: 4

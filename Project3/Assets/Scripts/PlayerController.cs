@@ -53,6 +53,7 @@ public class PlayerController : MonoBehaviour {
         else
         {
             Instantiate(upgradedLaser, startLaser.position, startLaser.rotation);
+            GetComponent<AudioSource>().Play();
         }
     }
 

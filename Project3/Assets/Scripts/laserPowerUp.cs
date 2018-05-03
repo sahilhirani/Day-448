@@ -2,13 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class laserPowerUp : MonoBehaviour
 {
     //effect of powerup pickup
     public float time;
     //variable for the effect on pickup
     public GameObject effect;
-    public GameObject shieldFX;
     //Executes on powerup collision
     public void OnTriggerEnter(Collider other)
     {
