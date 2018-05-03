@@ -1,6 +1,6 @@
 # Day 448 - EECS 448 Project 03 & 04
 
-This is the third project for EECS 448 Spring 2018. It is a prototype for the final project. Team 7 chose to create an endless runner that was based in space. The objective of the game is to dodge asteroids and shoot them if necessary. Try to get the highest score!
+This is the fourth project for EECS 448 Spring 2018. It is the final project. Team 7 chose to create an endless runner that was based in space. The objective of the game is to dodge asteroids, shoot them if necessary and get power ups to help destroy them. Try to get the highest score!
 
 ## Getting Started
 
