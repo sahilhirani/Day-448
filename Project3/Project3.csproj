@@ -287,9 +287,9 @@
     <Compile Include="Assets\Scripts\ScoreTracker.cs" />
     <Compile Include="Assets\Scripts\shieldPowerUp.cs" />
     <Compile Include="Assets\Scripts\shrinkPowerUp.cs" />
+    <Compile Include="Assets\Scripts\testGC.cs" />
     <Compile Include="Assets\Scripts\timePowerUp.cs" />
     <Compile Include="Assets\Scripts\VolumeSetting.cs" />
-    <Compile Include="Assets\testGC.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />

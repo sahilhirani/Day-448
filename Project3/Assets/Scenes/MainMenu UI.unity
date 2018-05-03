@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -993,8 +993,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.25, y: 0.2}
   m_AnchorMax: {x: 0.75, y: 0.8}
-  m_AnchoredPosition: {x: 0, y: 19.50003}
-  m_SizeDelta: {x: -127.70001, y: -121}
+  m_AnchoredPosition: {x: 0, y: 22.00003}
+  m_SizeDelta: {x: -127.70001, y: -116}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &458750949
 MonoBehaviour:
@@ -1430,7 +1430,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 135, y: -110}
+  m_AnchoredPosition: {x: 135, y: -120}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &752381987
@@ -3013,8 +3013,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 9.999992}
-  m_SizeDelta: {x: -0.000061035156, y: -20.000015}
+  m_AnchoredPosition: {x: 0, y: 4.9999924}
+  m_SizeDelta: {x: -0.000061035156, y: -10.000015}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1259847072
 MonoBehaviour:
@@ -3048,20 +3048,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'W | Up Arrow - Move Up
-
-    S | Down Arrow - Move Down
-
-    Right Click | Spacebar - Shoot
-
-
-    Dodge or Shoot the asteroids.
-
-    You score increases with time,
-
-    and also increases when you destory
-
-    asteroids.'
+  m_Text: "W | Up Arrow - Move Up\nS | Down Arrow - Move Down\nRight Click | Spacebar
+    - Shoot\n\nDodge or Shoot the asteroids.\nYou score increases with time,\nand
+    also increases when you destory\nasteroids. Collect power ups as \nthey come along
+    as well."
 --- !u!222 &1259847073
 CanvasRenderer:
   m_ObjectHideFlags: 0
