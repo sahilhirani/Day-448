@@ -12,13 +12,22 @@ public class MainMenu : MonoBehaviour {
 	public void Play(){
 		SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex + 1);
 	}
+	public void Easy(){
+		SceneManager.LoadScene ("Easy");
+	}
+	public void Regular(){
+		SceneManager.LoadScene ("Regular");
+	}
+	public void Insane(){
+		SceneManager.LoadScene ("Insane");
+	}
     /* @brief Loads the scene where the test is.
 	** @pre A valid test scene exists.
 	** @post The player starts testing the game.
 	** @return None*/
     public void Test()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+		SceneManager.LoadScene ("Test");
     }
 
     /* @brief Displays the how to play screen.

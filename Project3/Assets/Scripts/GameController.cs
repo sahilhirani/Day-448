@@ -47,7 +47,7 @@ public class GameController : MonoBehaviour {
 			//if user has pressed "R" the game restarts
 			if (Input.GetKeyDown (KeyCode.R)) {
 				//game restarts
-				SceneManager.LoadScene("Main");
+				SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 			} 
 			//if user has pressed "M" the game goes to the menu
 			else if (Input.GetKeyDown (KeyCode.M)) {

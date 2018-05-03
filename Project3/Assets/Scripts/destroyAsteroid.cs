@@ -5,7 +5,6 @@ using UnityEngine;
 public class destroyAsteroid : MonoBehaviour {
 	public GameObject explosion;
 	public GameObject playerExplosion;
-	private int scoreValue = 100;
 	private GameController gameController;
 
 	/* @brief Instantiates any defined objects. More info from Unity at: https://docs.unity3d.com/ScriptReference/MonoBehaviour.Start.html

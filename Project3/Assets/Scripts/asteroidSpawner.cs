@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class asteroidSpawner : MonoBehaviour {
 	//asteroid object in the game
@@ -30,14 +31,17 @@ public class asteroidSpawner : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		gameover = false;
-		if (difficultyNum == 1) {
+		Scene currentScene = SceneManager.GetActiveScene ();
+		string sceneName = currentScene.name;
+
+		if (sceneName == "Easy") {
 			StartCoroutine (spawnWavesE ());
-		} else if (difficultyNum == 2) {
+		} else if (sceneName == "Regular") {
 			StartCoroutine (spawnWaves ());
-		} else if (difficultyNum == 3) {
+		} else if (sceneName == "Insane") {
 			StartCoroutine (spawnWavesI ());
 		} else if (difficultyNum == 0) {
-			StartCoroutine (spawnWavesE ());
+			StartCoroutine (spawnWaves ());
 		}
 
 	}
@@ -46,7 +50,7 @@ public class asteroidSpawner : MonoBehaviour {
 	void Update () {
 		gameover = gameController.GO ();
 		if (((scoreTracker.score >= spawnNum)) && (scoreTracker.score != 0)) {
-			spawnNum += 2000;
+			spawnNum = spawnNum * 2;
 			spawnPU ();
 		}
 	}

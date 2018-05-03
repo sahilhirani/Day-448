@@ -5,14 +5,12 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 
-public class testGmC : MonoBehaviour {
+public class testGC : MonoBehaviour {
 
 	//text that holds the "Game Over" message
 	public Text gameOverText;
 	//text that holds the option to restart the game
 	public Text restartText;
-
-	//value that determines if player resarts
 	private bool restart;
 	//value that determines if game is over
 	public bool gameOver;
@@ -73,17 +71,21 @@ public class testGmC : MonoBehaviour {
 			Instantiate (powerUps [4], spawnPosition, spawnRotation);
 		}
 		//checks to see if the user has selected to restart the game
-		if (restart) {
-			//if user has pressed "R" the game restarts
-			if (Input.GetKeyDown (KeyCode.R)) {
-				//game restarts
-				SceneManager.LoadScene("Test");
-			} 
-			//if user has pressed "M" the game goes to the menu
-			else if (Input.GetKeyDown (KeyCode.M)) {
-				//scence changes to menu
-				SceneManager.LoadScene ("MainMenu UI");
-			}
+		//if user has pressed "R" the game restarts
+		if (Input.GetKeyDown (KeyCode.R)) {
+			//game restarts
+			SceneManager.LoadScene("Test");
+		} 
+		//if user has pressed "M" the game goes to the menu
+		if (Input.GetKeyDown (KeyCode.M)) {
+			//scence changes to menu
+			SceneManager.LoadScene ("MainMenu UI");
+		}
+		if (Input.GetKeyDown (KeyCode.G)) {
+			player.GetComponent<MeshCollider> ().isTrigger = false;
+		}
+		if (Input.GetKeyDown (KeyCode.H)) {
+			player.GetComponent<MeshCollider> ().isTrigger = true;
 		}
 
 	}

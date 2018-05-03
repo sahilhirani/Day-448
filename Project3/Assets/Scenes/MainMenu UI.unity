@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -704,7 +704,7 @@ GameObject:
   - component: {fileID: 371607126}
   - component: {fileID: 371607129}
   m_Layer: 5
-  m_Name: RegularOption
+  m_Name: EasyOption
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -769,7 +769,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 371607129}
-        m_MethodName: Play
+        m_MethodName: Easy
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1807,7 +1807,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Hard
+  m_Text: Regular
 --- !u!222 &856852403
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3135,7 +3135,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Regular
+  m_Text: Easy
 --- !u!222 &1274368107
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3375,6 +3375,7 @@ GameObject:
   - component: {fileID: 1572866519}
   - component: {fileID: 1572866518}
   - component: {fileID: 1572866517}
+  - component: {fileID: 1572866520}
   m_Layer: 5
   m_Name: InsaneOption
   m_TagString: Untagged
@@ -3439,7 +3440,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1572866518}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1572866520}
+        m_MethodName: Insane
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1572866518
@@ -3475,6 +3487,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1572866515}
+--- !u!114 &1572866520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1572866515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f054aef5766a451aae2a4244fbad554, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1588671177
 GameObject:
   m_ObjectHideFlags: 0
@@ -3619,8 +3642,9 @@ GameObject:
   - component: {fileID: 1684200549}
   - component: {fileID: 1684200548}
   - component: {fileID: 1684200547}
+  - component: {fileID: 1684200550}
   m_Layer: 5
-  m_Name: HardOption
+  m_Name: RegularOption
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3683,7 +3707,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1684200548}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1684200550}
+        m_MethodName: Regular
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1684200548
@@ -3719,6 +3754,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1684200545}
+--- !u!114 &1684200550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1684200545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f054aef5766a451aae2a4244fbad554, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &1689276958 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 22400008, guid: b6a1cf4e3eeaf9a4ca38bf8acb910a6d,

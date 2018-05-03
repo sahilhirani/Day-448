@@ -19,7 +19,7 @@ public class ScoreTracker : MonoBehaviour {
 		if (gameController.GO()) {
 			updateScore ();
 		} else {
-			score += Mathf.CeilToInt ((Time.time)/4);
+			score += Mathf.CeilToInt ((Time.time)/10);
 			updateScore ();
 		}
 	}

@@ -14,3 +14,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Test.unity
     guid: 051d50b50dd834b78ab720607af132ad
+  - enabled: 1
+    path: Assets/Scenes/Easy.unity
+    guid: 1f26463ac4fb5434cac0f65b0a2298e8
+  - enabled: 1
+    path: Assets/Scenes/Insane.unity
+    guid: c0458fa760b7341289cb117c241dd305
+  - enabled: 1
+    path: Assets/Scenes/Regular.unity
+    guid: a187956f5dd69456494b3d7eebad4813
